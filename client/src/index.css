@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-white;
+  }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* bg-[#F1ECE4] */
+.react-datepicker-left {
+  @apply z-40 w-72 text-sm bg-red-500 shadow px-3 py-2 border-2 border-gray-200 rounded;
+}
+.fc-event {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/* .Toastify__progress-bar {
+  background: linear-gradient(
+    to right,
+    rgba(128, 128, 128, 0.5),
+    rgba(128, 128, 128, 0.5)
+  ) !important;
+} */
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.bg-dark.rmdp-wrapper,
+.bg-dark .rmdp-month-picker,
+.bg-dark .rmdp-year-picker,
+.bg-dark .rmdp-time-picker div input,
+.rmdp-container .bg-dark.ep-arrow::after {
+  background-color: black;
+  /* border-top: 1px solid red; */
+  /* color: black; */
+}
+
+.bg-dark .rmdp-day:not(.rmdp-deactive),
+.bg-dark .rmdp-time-picker div .rmdp-am,
+.bg-dark .rmdp-header-values,
+.bg-dark .rmdp-panel-header {
+  color: white;
+}
+
+/*the selected dates  */
+.bg-dark .rmdp-panel-body li {
+  background-color: #aa002d;
+}
+/*week day  */
+.bg-dark .rmdp-week-day {
+  color: #aa002d;
+}
+
+.bg-dark .rmdp-day.rmdp-deactive {
+  color: brown;
+}
+
+/* arrows left and right */
+.bg-dark .rmdp-arrow {
+  border: solid #aa002d;
+  border-width: 0 2px 2px 0;
+}
+
+/* arrow container */
+.bg-dark .rmdp-arrow-container:hover {
+  background-color: #aa002d;
+  box-shadow: 0 0 3px green;
+}
+
+/* selected day background */
+.bg-dark .rmdp-day.rmdp-today span {
+  background-color: red;
+}
+
+/* selected days background in multi mode */
+.bg-dark .rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: #aa002d;
+  box-shadow: 0 0 3px white;
+}
+
+/* hover background */
+.bg-dark .rmdp-day:not(.rmdp-day-hidden) span:hover {
+  background-color: red !important;
+}
+
+.bg-dark .rmdp-range {
+  background-color: #aa002d !important;
+}
+
+/* cross sign */
+.bg-dark .b-deselect {
+  color: #aa002d;
+  background-color: white;
+}
+
+.bg-dark.ep-arrow[direction="top"] {
+  border-bottom: 1px solid black;
+  margin-top: 1px;
+}
+
+.ep-arrow[direction="top"] {
+  margin-top: 1px;
+}
+
+.bg-dark.ep-arrow[direction="bottom"] {
+  border-top: 1px solid black;
+}
+
+.dark .rmsc {
+  --rmsc-main: rgba(255, 255, 255, 0.6);
+  --rmsc-hover: black;
+  --rmsc-selected: #1d1915;
+  /* --rmsc-border: black; */
+  /* --rmsc-gray: rgba(255, 255, 255, 0.6); */
+  --rmsc-bg: white;
+  color: gray;
+}
